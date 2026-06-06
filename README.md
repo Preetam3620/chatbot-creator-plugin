@@ -159,6 +159,10 @@ skills/
 
 ---
 
+## Privacy
+
+This plugin runs entirely on your machine and collects no user data.
+
 ## License
 
 MIT
