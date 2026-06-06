@@ -1,0 +1,12 @@
+{
+  "name": "chatbot-creator",
+  "description": "Scaffolds a full FastAPI + React chatbot app with auth, WebSocket streaming, and multi-LLM support",
+  "version": "1.0.0",
+  "author": {
+    "name": "Preetam Maske",
+    "email": "preetamamaske1@gmail.com"
+  },
+  "repository": "https://github.com/Preetam3620/chatbot-creator-plugin",
+  "homepage": "https://github.com/Preetam3620/chatbot-creator-plugin#readme",
+  "license": "MIT"
+}
