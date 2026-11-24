@@ -9,7 +9,7 @@ You are building a complete, standalone LLM chatbot application from scratch.
 
 **Reference files:** All verbatim file contents live in `references/`. Read each reference file once at the step that needs it — do not re-read on every file write.
 
-> **Required structure:** `SKILL.md`, `references/`, and `scripts/` must exist in the same directory. The skill reads from `references/` at build time and runs `scripts/validate_scaffold.py` at the end.
+> **Required structure:** `SKILL.md` and `references/` must exist in the same directory. The skill reads from `references/` at build time and checks the result against `references/expected-files.md` at the end.
 
 ---
 
@@ -115,7 +115,7 @@ frontend/
 
 ### Step 1 — Backend config files
 
-**Before writing any files**, check whether `backend/` or `frontend/` directories already exist in the current working directory. If either exists, list every file from `scripts/validate_scaffold.py`'s `EXPECTED_FILES` that is already present, then print:
+**Before writing any files**, check whether `backend/` or `frontend/` directories already exist in the current working directory. If either exists, read `references/expected-files.md` and list every file from it that is already present, then print:
 
 ```
 ⚠️  The following files already exist and will be overwritten:
@@ -194,10 +194,6 @@ All files in this step are copied verbatim from `references/frontend-reference.m
 
 ### Step 5 — Validate and print startup instructions
 
-Run the validation script to confirm all files were created:
-
-```
-python scripts/validate_scaffold.py
-```
+Confirm every file listed in `references/expected-files.md` exists (check with your file tools, e.g. a glob over `backend/**` and `frontend/**`). Print each path with ✓ or ✗ and a `N/M files present` summary.
 
 If any files are missing, re-run the relevant build step before continuing. Once all files are present, read `references/startup-instructions.md` and print its contents exactly as written.

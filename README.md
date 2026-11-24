@@ -153,8 +153,7 @@ skills/
       backend-reference.md  ← Verbatim Python source for all backend files
       frontend-reference.md ← Verbatim TypeScript/TSX source for all frontend files
       startup-instructions.md ← Printed at the end of scaffolding
-    scripts/
-      validate_scaffold.py  ← Confirms all 40+ expected files were created
+      expected-files.md     ← Checklist used to confirm all 40+ files were created
 ```
 
 ---
