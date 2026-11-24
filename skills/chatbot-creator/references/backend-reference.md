@@ -31,13 +31,13 @@ slowapi>=0.1.9
 
 ```
 DATABASE_URL=sqlite:///./chatbot.db
-SECRET_KEY=change-me-generate-with-python-secrets.token_urlsafe-32
+SECRET_KEY=YOUR_SECRET_KEY
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=480
 CORS_ORIGINS=http://localhost:5173
-ANTHROPIC_API_KEY=
-OPENAI_API_KEY=
-GEMINI_API_KEY=
+ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ---
@@ -50,7 +50,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./chatbot.db"
-    SECRET_KEY: str = "change-me-generate-with-python-secrets.token_urlsafe-32"
+    SECRET_KEY: str  # required; set in .env
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 480
     CORS_ORIGINS: str = "http://localhost:5173"

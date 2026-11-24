@@ -1,7 +1,7 @@
 {
   "name": "chatbot-creator",
   "description": "Scaffolds a full FastAPI + React chatbot app with auth, WebSocket streaming, and multi-LLM support",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Preetam Maske",
     "email": "preetamamaske1@gmail.com"

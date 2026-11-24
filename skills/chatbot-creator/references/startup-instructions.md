@@ -17,7 +17,7 @@ BACKEND
   cp .env.example .env
   # Edit .env:
   #   SECRET_KEY=<generate with: python -c "import secrets; print(secrets.token_urlsafe(32))">
-  #   ANTHROPIC_API_KEY=sk-ant-...   (or OPENAI_API_KEY / GEMINI_API_KEY)
+  #   ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY   (or OPENAI_API_KEY / GEMINI_API_KEY)
 
   uvicorn app.main:app --reload --port 8000
   # Tables auto-created on first start. API docs: http://localhost:8000/docs
